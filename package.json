@@ -1,0 +1,25 @@
+{
+  "name": "ui-chrome-rater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "start": "parcel popup.html --open",
+    "build": "rm -rf dist && parcel build popup.html --public-url '.'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "preact": "^8.3.1",
+    "preact-compat": "^3.18.4",
+    "reactjs-percentage-circle": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^1.1.0",
+    "parcel-bundler": "^1.10.1"
+  }
+}

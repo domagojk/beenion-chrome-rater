@@ -1,0 +1,13 @@
+body {
+  background: #f8f6f2;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  width: 250px;
+  min-height: 200px;
+  padding-bottom: 10px;
+}

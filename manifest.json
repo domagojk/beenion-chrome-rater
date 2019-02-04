@@ -1,0 +1,40 @@
+{
+  "name": "Beenion - Web Rater",
+  "version": "1.6.3",
+  "description": "Beenion web page rating extension",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Beenion - Web Rater",
+    "default_popup": "dist/popup.html",
+    "default_icon": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+  },
+  "externally_connectable": {
+    "matches": ["https://beenion.com/*"]
+  },
+  "permissions": [
+    "identity",
+    "activeTab",
+    "storage",
+    "tabs",
+    "notifications",
+    "https://api.beenion.com/*",
+    "https://cognito-idp.us-east-1.amazonaws.com/*"
+  ],
+  "background": {
+    "scripts": ["lib/rxjs.umd.min.js", "background.js"],
+    "persistent": false
+  },
+  "oauth2": {
+    "client_id": "881999220470-o0tibnte337vp3firmv38qer8004mko1.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAisCXS5blOcxwAQkGRMHvFc1TtGIP+8BmawR8NirwHrAMldQo3IWExuOAm4MmhnTd6ifLldSnQsplTTRnOmEKs0ySx+Av9Fyb/b+cxt+TbOjqZQ0t+wPfEA0uo42Mx+pJx8pge6v8CyrPPMMaWK6cnYAVxp7TK5qm5SlzHYaJQFyW6+FhiZH5nabEvKjVnzbiAyvelMfHHDi5OjTKxLiNM+bwoQeNDhMjrgW/PTXjK+Y+bGy8Rsd0W+p0OLaeaQt+Ohhbc+aVUYlsau4MfTQAgak0mFwtYLEzl7lMDKxIbaxG9Us7UVwz/VloNd3c4gOQ8oUPBnEIqQti/5KTxGIu8QIDAQAB"
+}
